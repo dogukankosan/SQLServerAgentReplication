@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35229.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyenUI", "AsyenUI\AsyenUI.csproj", "{9298B413-0028-4C8A-867D-227F477476B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyenService", "AsyenService\AsyenService.csproj", "{08DBD085-A956-49F8-B3E6-7825FF1E74C0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AsyenOtomatikIslemlerSetup", "AsyenOtomatikIslemlerSetup\AsyenOtomatikIslemlerSetup.vdproj", "{BF83E6F9-33ED-4580-8E84-C5A0A50F0100}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9298B413-0028-4C8A-867D-227F477476B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9298B413-0028-4C8A-867D-227F477476B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9298B413-0028-4C8A-867D-227F477476B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9298B413-0028-4C8A-867D-227F477476B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08DBD085-A956-49F8-B3E6-7825FF1E74C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08DBD085-A956-49F8-B3E6-7825FF1E74C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08DBD085-A956-49F8-B3E6-7825FF1E74C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08DBD085-A956-49F8-B3E6-7825FF1E74C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF83E6F9-33ED-4580-8E84-C5A0A50F0100}.Debug|Any CPU.ActiveCfg = Debug
+		{BF83E6F9-33ED-4580-8E84-C5A0A50F0100}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A895858D-7454-4AEC-BEC4-2CDD5488D62B}
+	EndGlobalSection
+EndGlobal
