@@ -29,9 +29,8 @@ namespace AsyenUI.Forms
             {
                 _ = SQLLiteCRUD.InserUpdateDelete("UPDATE CompanyInfo SET CompanyName='"+txt_CompanyName.Text+"',TableName='" + txt_TableInfo.Text + "'", "Şirket Bilgileri Güncelleme Başarılı");
                 if (DialogResult.Yes == XtraMessageBox.Show("Güncellenen Tablo Adı Tüm SQL Komutlarında Değiştirilsin Mi ?", "Güncelleme", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-                {
                     _ = SQLLiteCRUD.InserUpdateDelete("UPDATE SQLQuerys SET Query=replace(Query,'" + tableName + "','" + txt_TableInfo.Text + "')", "SQL Sorguları Güncelleme Başarılı");
-                }
+                this.Close();
             }
             else
             {

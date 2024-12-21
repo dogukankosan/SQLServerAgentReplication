@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Data.SQLite;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace AsyenUI.Classes
 {
@@ -55,11 +56,42 @@ namespace AsyenUI.Classes
                 }
                 catch (Exception e)
                 {
-                    XtraMessageBox.Show(e.Message, "Hatalı Veri Çekme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     TextLog.TextLogging(e.Message);
                 }
             }
             return null;
+        }
+        internal static async Task<bool> InserUpdateDelete(string query)
+        {
+            using (SqlConnection conn = new SqlConnection(EncryptionHelper.Decrypt(GetDataFromSQLiteConnection())))
+            {
+                try
+                {
+                    await conn.OpenAsync();
+                    string[] commands = query.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
+
+                    foreach (string command in commands)
+                    {
+                        string cleanCommand = command.Replace("\n", " ").Replace("\r", " ").Trim();
+
+                        if (!string.IsNullOrWhiteSpace(cleanCommand))
+                        {
+                            using (SqlCommand cmd = new SqlCommand(cleanCommand, conn))
+                            {
+                                cmd.CommandTimeout = 120;
+                                await cmd.ExecuteNonQueryAsync();
+                            }
+                        }
+                    }
+                    return true; 
+                }
+                catch (Exception ex)
+                {
+                    XtraMessageBox.Show(ex.Message, "Hatalı veritabanı işlemi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    TextLog.TextLogging(ex.Message); 
+                    return false;
+                }
+            }
         }
     }
 }

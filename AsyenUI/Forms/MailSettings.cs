@@ -39,12 +39,12 @@ namespace AsyenUI.Forms
                 if (EMailManager.EmailControl(txt_Email, txt_recipientEmail, txt_Password, txt_Server, txt_Port))
                 {
                     _ = SQLLiteCRUD.InserUpdateDelete("UPDATE MailSettings SET MailAdress='" + txt_Email.Text + "',ReceiverMail='" + txt_recipientEmail.Text + "',Password='" + EncryptionHelper.Encrypt(txt_Password.Text) + "',ServerName='" + txt_Server.Text + "',Port=" + txt_Port.Text + ",SSl=" + chk_SSL.Checked + "", "Mail Güncelleme İşlemi Başarılı");
+                    status = false;
+                    this.Close();
                 }
             }
             else
-            {
                 XtraMessageBox.Show("Önce Mailinizi Test Ediniz !!", "Mail Test Et", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
         private void MailSettings_Load(object sender, EventArgs e)
         {

@@ -59,7 +59,7 @@ namespace AsyenUI.Forms
                 }
                 else
                 {
-                    string days = default;
+                    string days = "";
                     days += chk_Monday.Checked ? "Pazartesi," : "";
                     days += chk_Tuesday.Checked ? "Salı," : "";
                     days += chk_Wednesday.Checked ? "Çarşamba," : "";

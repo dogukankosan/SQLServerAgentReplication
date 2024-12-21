@@ -10,12 +10,28 @@ namespace AsyenUI.Forms
         {
             InitializeComponent();
         }
-
-        private void btn_Login_Click(object sender, EventArgs e)
+        private void Login_Load_1(object sender, EventArgs e)
         {
-            if (txt_LoginName.Text == "Asyen" && txt_Password.Text == "0212")
+            btn_Eyes.Visible = false;
+        }
+        private void btn_Noteyes_Click(object sender, EventArgs e)
+        {
+            txt_Pass.Focus();
+            btn_Eyes.Visible = true;
+            btn_Noteyes.Visible = false;
+            txt_Pass.Properties.PasswordChar = '\0';
+        }
+        private void btn_Eyes_Click(object sender, EventArgs e)
+        {
+            txt_Pass.Focus();
+            btn_Eyes.Visible = false;
+            btn_Noteyes.Visible = true;
+            txt_Pass.Properties.PasswordChar = '*';
+        }
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            if (txt_Username.Text == "Asyen" && txt_Pass.Text == "0212")
             {
-                XtraMessageBox.Show("Giriş İşlemi Başarılı", "Başarılı Giriş", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Home hm = new Home();
                 this.Hide();
                 hm.ShowDialog();
@@ -23,26 +39,8 @@ namespace AsyenUI.Forms
             else
             {
                 XtraMessageBox.Show("Giriş İşlemi Başarısız Tekrar Deneyiniz", "Hatalı Giriş", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_LoginName.Focus();
+                txt_Username.Focus();
             }
-        }
-        private void btn_NotEye_Click(object sender, EventArgs e)
-        {
-            txt_Password.Focus();
-            btn_Eye.Visible = true;
-            btn_NotEye.Visible = false;
-            txt_Password.Properties.PasswordChar = '*';
-        }
-        private void btn_Eye_Click(object sender, EventArgs e)
-        {
-            txt_Password.Focus();
-            btn_Eye.Visible = false;
-            btn_NotEye.Visible = true;
-            txt_Password.Properties.PasswordChar = '\0';
-        }
-        private void Login_Load(object sender, EventArgs e)
-        {
-            btn_NotEye.Visible = false;
         }
     }
 }

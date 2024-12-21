@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace AsyenUI.Forms
 {
-    public partial class SqlConnectionSettings : DevExpress.XtraEditors.XtraForm
+    public partial class SqlConnectionSettings : XtraForm
     {
         public SqlConnectionSettings()
         {
@@ -44,32 +44,21 @@ namespace AsyenUI.Forms
                 }
             }
         }
-        private void btn_Save_Click(object sender, EventArgs e)
+        private void SqlConnectionSettings_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SQLLiteCRUD.ConnectionStringControlAdd(txt_ServerName.Text, txt_LoginName.Text, txt_Password.Text, txt_DatabaseName.Text);
-        }
-        private void SqlConnectionSettings_FormClosing(object sender,FormClosingEventArgs e)
-        {
-            if (!formStatus)
+            if (string.IsNullOrWhiteSpace(txt_DatabaseName.Text) || string.IsNullOrWhiteSpace(txt_ServerName.Text) || string.IsNullOrWhiteSpace(txt_LoginName.Text) || string.IsNullOrWhiteSpace(txt_Password.Text))
             {
-                if (string.IsNullOrWhiteSpace(txt_DatabaseName.Text) || string.IsNullOrWhiteSpace(txt_ServerName.Text) || string.IsNullOrWhiteSpace(txt_LoginName.Text) || string.IsNullOrWhiteSpace(txt_Password.Text))
-                {
-                    XtraMessageBox.Show("Metin Kutuların Tamamını Doldurulmalıdır !!", "Hatalı Veri Girişi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                XtraMessageBox.Show("Metin Kutuların Tamamını Doldurulmalıdır !!", "Hatalı Veri Girişi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+            }
+            else
+            {
+                bool status = SQLLiteCRUD.ConnectionStringControlAdd(txt_ServerName.Text, txt_LoginName.Text, txt_Password.Text, txt_DatabaseName.Text);
+                if (!status)
                     e.Cancel = true;
-                }
                 else
-                {
-                    bool status = SQLLiteCRUD.ConnectionStringControlAdd(txt_ServerName.Text, txt_LoginName.Text, txt_Password.Text, txt_DatabaseName.Text);
-                    if (!status)
-                    {
-                        e.Cancel = true;
-                    }
-                    else
-                    {
-                        e.Cancel = false;
-                    }
-                }
-            }     
+                    e.Cancel = false;
+            }
         }
     }
 }

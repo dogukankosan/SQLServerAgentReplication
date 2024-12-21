@@ -29,7 +29,6 @@ namespace AsyenUI.Classes
                 }
                 catch (Exception ex)
                 {
-                    XtraMessageBox.Show(ex.Message, "Hatalı Veri Çekme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     TextLog.TextLogging(ex.Message);
                     return null;
                 }

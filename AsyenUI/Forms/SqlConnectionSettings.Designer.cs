@@ -30,7 +30,6 @@ namespace AsyenUI.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SqlConnectionSettings));
-            this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_Password = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,22 +43,6 @@ namespace AsyenUI.Forms
             ((System.ComponentModel.ISupportInitialize)(this.txt_ServerName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_DatabaseName.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btn_Save.Appearance.Font = new System.Drawing.Font("Tahoma", 18.25F);
-            this.btn_Save.Appearance.Options.UseBackColor = true;
-            this.btn_Save.Appearance.Options.UseFont = true;
-            this.btn_Save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Save.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Save.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.ImageOptions.Image")));
-            this.btn_Save.Location = new System.Drawing.Point(0, 135);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(413, 38);
-            this.btn_Save.TabIndex = 4;
-            this.btn_Save.Text = "Kaydet";
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // label3
             // 
@@ -136,14 +119,12 @@ namespace AsyenUI.Forms
             // 
             // SqlConnectionSettings
             // 
-            this.AcceptButton = this.btn_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(413, 173);
+            this.ClientSize = new System.Drawing.Size(413, 145);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_DatabaseName);
-            this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.label2);
@@ -167,7 +148,6 @@ namespace AsyenUI.Forms
         }
 
         #endregion
-        private DevExpress.XtraEditors.SimpleButton btn_Save;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.TextEdit txt_Password;
         private System.Windows.Forms.Label label2;

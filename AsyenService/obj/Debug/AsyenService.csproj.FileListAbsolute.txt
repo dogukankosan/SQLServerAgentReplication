@@ -164,3 +164,13 @@ C:\Users\DOGUKAN\source\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\Asyen
 C:\Users\DOGUKAN\source\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.pdb
 C:\Users\DOGUKAN\source\repos\AsyenOtomatikIslemler\AsyenService\bin\Debug\AsyenUI.pdb
 C:\Users\DOGUKAN\source\repos\AsyenOtomatikIslemler\AsyenService\bin\Debug\AsyenUI.exe.config
+D:\repos\AsyenOtomatikIslemler\AsyenUI\bin\Debug\Service\AsyenService.exe
+D:\repos\AsyenOtomatikIslemler\AsyenUI\bin\Debug\Service\AsyenService.exe.config
+D:\repos\AsyenOtomatikIslemler\AsyenUI\bin\Debug\Service\AsyenService.pdb
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.ProjectInstaller.resources
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.csproj.GenerateResource.cache
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.csproj.CoreCompileInputs.cache
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.csproj.CopyComplete
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.exe
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.pdb
+D:\repos\AsyenOtomatikIslemler\AsyenService\obj\Debug\AsyenService.csprojAssemblyReference.cache

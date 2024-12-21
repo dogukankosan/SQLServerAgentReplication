@@ -35,11 +35,6 @@ namespace AsyenUI.Forms
             this.CompanyInfoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mailBilgileriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SqlConnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceStartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceStopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLSorgularıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -51,7 +46,6 @@ namespace AsyenUI.Forms
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.şirketBilgileriToolStripMenuItem,
-            this.ayarlarToolStripMenuItem,
             this.sQLSorgularıToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -93,49 +87,6 @@ namespace AsyenUI.Forms
             this.SqlConnectionToolStripMenuItem.Text = "SQL Bağlantı Ayarları";
             this.SqlConnectionToolStripMenuItem.Click += new System.EventHandler(this.SqlConnectionToolStripMenuItem_Click);
             // 
-            // ayarlarToolStripMenuItem
-            // 
-            this.ayarlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.serviceSaveToolStripMenuItem,
-            this.serviceStartToolStripMenuItem,
-            this.serviceStopToolStripMenuItem,
-            this.serviceDeleteToolStripMenuItem});
-            this.ayarlarToolStripMenuItem.Name = "ayarlarToolStripMenuItem";
-            this.ayarlarToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.ayarlarToolStripMenuItem.Text = "Servis Ayarları";
-            // 
-            // serviceSaveToolStripMenuItem
-            // 
-            this.serviceSaveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("serviceSaveToolStripMenuItem.Image")));
-            this.serviceSaveToolStripMenuItem.Name = "serviceSaveToolStripMenuItem";
-            this.serviceSaveToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.serviceSaveToolStripMenuItem.Text = "Servisi Kaydet";
-            this.serviceSaveToolStripMenuItem.Click += new System.EventHandler(this.serviceSaveToolStripMenuItem_Click);
-            // 
-            // serviceStartToolStripMenuItem
-            // 
-            this.serviceStartToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("serviceStartToolStripMenuItem.Image")));
-            this.serviceStartToolStripMenuItem.Name = "serviceStartToolStripMenuItem";
-            this.serviceStartToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.serviceStartToolStripMenuItem.Text = "Servisi Başlat";
-            this.serviceStartToolStripMenuItem.Click += new System.EventHandler(this.serviceStartToolStripMenuItem_Click);
-            // 
-            // serviceStopToolStripMenuItem
-            // 
-            this.serviceStopToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("serviceStopToolStripMenuItem.Image")));
-            this.serviceStopToolStripMenuItem.Name = "serviceStopToolStripMenuItem";
-            this.serviceStopToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.serviceStopToolStripMenuItem.Text = "Servisi Durdur";
-            this.serviceStopToolStripMenuItem.Click += new System.EventHandler(this.serviceStopToolStripMenuItem_Click);
-            // 
-            // serviceDeleteToolStripMenuItem
-            // 
-            this.serviceDeleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("serviceDeleteToolStripMenuItem.Image")));
-            this.serviceDeleteToolStripMenuItem.Name = "serviceDeleteToolStripMenuItem";
-            this.serviceDeleteToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.serviceDeleteToolStripMenuItem.Text = "Servisi Sil";
-            this.serviceDeleteToolStripMenuItem.Click += new System.EventHandler(this.serviceDeleteToolStripMenuItem_Click);
-            // 
             // sQLSorgularıToolStripMenuItem
             // 
             this.sQLSorgularıToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -156,9 +107,9 @@ namespace AsyenUI.Forms
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(55, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 99);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(431, 145);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -176,7 +127,7 @@ namespace AsyenUI.Forms
             this.MaximizeBox = false;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Asyen Otomatik İşlemler";
+            this.Text = "Asyen Otomatik İşlemler V1.0.0";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Home_FormClosed);
             this.Load += new System.EventHandler(this.Home_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -190,11 +141,6 @@ namespace AsyenUI.Forms
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ayarlarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviceSaveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviceStartToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviceStopToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviceDeleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem şirketBilgileriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CompanyInfoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mailBilgileriToolStripMenuItem;

@@ -25,9 +25,9 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Asyen Otomatik İşlemlerin Yapıldığı Servis";
-            this.serviceInstaller1.DisplayName = "Asyen Servis";
-            this.serviceInstaller1.ServiceName = "Asyen Servis";
+            this.serviceInstaller1.Description = "Asyen Veritabani Otomatik İşlemlerin Yapıldığı Servis";
+            this.serviceInstaller1.DisplayName = "Asyen Otomatik Islemler Servisi";
+            this.serviceInstaller1.ServiceName = "Asyen Otomatik Islemler Servisi";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
