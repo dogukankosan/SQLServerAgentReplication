@@ -46,7 +46,7 @@ SQLServerAgentReplication/
 
 ## 🧠 Teknik Detaylar
 
-- .NET 6+ veya .NET Framework 4.8 desteği
+- .NET Framework 4.8 desteği
 - SQL Server Agent entegrasyonu
 - Parametrik ve güvenli SqlCommand kullanımı
 - Hata durumunda ReplicationLog veya ErrorLog tablosuna kayıt
