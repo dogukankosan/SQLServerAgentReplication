@@ -1,4 +1,7 @@
-# SQLServerAgent Replication
+
+# ![Otomatik İşlemler](https://github.com/user-attachments/assets/e5c5753f-4ab3-4c97-8a49-88c28c2b7a8f)
+
+SQLServerAgent Replication
 
 🔁 **SQL Server Agent ile Otomatik Veri Replikasyonu ve Senkronizasyonu**
 
