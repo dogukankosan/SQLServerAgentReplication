@@ -58,6 +58,12 @@ SQLServerAgentReplication/
 
 ---
 
+## 🤝 Katkı
+
+Katkı sağlamak için projeyi forklayabilir ve pull request gönderebilirsiniz.
+
+---
+
 ## 📄 Lisans
 
 MIT License
@@ -66,5 +72,7 @@ MIT License
 
 ## 📬 İletişim
 
-👨‍💻 Geliştirici: @dogukankosan  
-🐞 Hata bildirimi ve öneriler için: Issues sekmesini kullanabilirsiniz.
+- 👨‍💻 Geliştirici: [@dogukankosan](https://github.com/dogukankosan)  
+- 🐞 Suggestions or issues: [Issues sekmesi](https://github.com/dogukankosan/LogoWhatsappEntegrasyon/issues)
+
+---
